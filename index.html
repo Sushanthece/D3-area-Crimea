@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Crimea bar</title>
+    <script type="text/javascript" src="d3.v2.js"></script>
+    <style type="text/css">
+
+    svg {
+      width: 840px;
+      height: 900px;
+      font: 10px sans-serif;
+      shape-rendering: crispEdges;
+    }
+        
+  button {
+  font: 14px Helvetica Neue;
+  background-color: #222;
+  
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.25), rgba(255,255,255,.11));
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,.25)),color-stop(1, rgba(255,255,255,.11)));
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.11));
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 -1px 1px #222;
+  padding: 6px 10px 6px 10px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #222;
+  margin: 0;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-box-shadow: 0 1px 3px #999;
+  
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  
+}
+
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
+  </head>
+  <body>
+  
+  <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+              <a id="forkme_banner" href="https://github.com/Sushanthece/D3-treemap">View on GitHub</a>
+              <h1 id="project_title">Crimea bar</h1> 
+              <a id="home" href="http://sushanthece.github.io/">Home</a>
+           </header>
+        </div>
+    
+   <!-- MAIN CONTENT -->
+           <div >
+          <section id="main_content" class="inner" >   
+  <div>
+  <div style="width:25%;float:left;display:inline-block" >
+    <table border="1"><tr><td width="40px" bgcolor="lightblue">Param3</td><td width="40px" bgcolor="Darkgray">Param2</td><td width="40px" bgcolor="Lightpink">Param1</td></tr></table>
+  <textarea id="input_data" name="input_data" rows="20" cols="24">
+date,param1,param2,param3
+1/2012,230,460,1440
+2/2012,180,520,1270
+3/2012,155,350,935
+4/2012,195,195,560
+5/2012,180,155,550
+6/2012,330,130,650
+7/2012,260,130,430
+8/2012,290,110,490
+9/2012,355,100,290
+10/2012,135,95,245
+11/2012,100,140,325
+12/2012,40,120,215
+</textarea></br>
+<button id="render" class="name">render</button>
+</div>
+  <div>
+  <div id="crimeamap" style="width:72%;float:right;display:inline-block">
+    <script type="text/javascript" src="crimea-stacked-area.js"></script></div>
+    </div>
+        </section>
+        </div>
+  </body>
+</html>
